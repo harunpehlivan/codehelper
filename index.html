@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+		<h1 class='header'>Handy Code Snippets</h1>
+		<div class='pop' id='popup'>
+			<p>Text copied to clipboard!</p>
+		</div>
+		<div class='selection'>
+			<select id='codeSelect'>
+				<option value='python'>Python</option>
+				<option value='ruby'>Ruby</option>
+				<option value='javascript'>JavaScript</option>
+			</select>
+		</div>
+
+<!-- SNIPPET ONE PYTHON -->
+
+		<div class='main' id='python'>
+			<div class='snippet' onclick='copySnippet("snippet1")'>
+				<h1 class='snippet-title'>Hello World Function!</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+def hello():
+	print("Hello World!")
+					</xmp>
+					<textarea class='invisible' id='snippet1'>def hello():
+	print("Hello World!")</textarea>
+				</div>
+			</div>
+
+<!-- SNIPPET TWO PYTHON -->
+
+			<div class='snippet' onclick='copySnippet("snippet5")'>
+				<h1 class='snippet-title'>Slow Print</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+import sys
+import time
+
+def slow_print(x, t=0.08):
+	for char in x:
+		sys.stdout.write(char)
+		sys.stdout.flush()
+		time.sleep(t)
+	print()
+					</xmp>
+					<textarea class='invisible' id='snippet5'>
+import sys
+import time
+
+def slow_print(x, t=0.08):
+	for char in x:
+		sys.stdout.write(char)
+		sys.stdout.flush()
+		time.sleep(t)
+	print()
+					</textarea>
+				</div>
+			</div>
+
+<!-- SNIPPET THREE PYTHON -->
+
+			<div class='snippet' onclick='copySnippet("snippet6")'>
+				<h1 class='snippet-title'>Clear Screen</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+def clear():
+	os.system('clear') # os.system('cls') for windows
+
+					</xmp>
+					<textarea class='invisible' id='snippet6'>def clear():
+	os.system('clear') # os.system('cls') for windows
+</textarea>
+				</div>
+			</div>
+
+<!-- SNIPPET FOUR PYTHON -->
+
+			<div class='snippet' onclick='copySnippet("snippet7")'>
+					<h1 class='snippet-title'>Lists</h1>
+					<div class='snippet-code-wrapper'>
+						<xmp class='snippet-code'>
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v, 'w', 'x', 'y', 'z']
+caps_alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+						</xmp>
+						<textarea class='invisible' id='snippet7'>
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v, 'w', 'x', 'y', 'z']
+caps_alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+	</textarea>
+				</div>
+			</div>
+
+<!-- SNIPPET FIVE PYTHON -->
+
+			<div class='snippet' onclick='copySnippet("snippet8")'>
+				<h1 class='snippet-title'>Print Clear</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+print("\033[H",end="")
+					</xmp>
+					<textarea class='invisible' id='snippet8'>
+print("\033[H",end="")</textarea>
+				</div>
+			</div>
+
+			<div class='snippet' onclick='copySnippet("python_snippet2")'>
+				<h1 class='snippet-title'>Color Codes</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+PURPLE = '\033[95m'
+CYAN = '\033[95m'
+DARKCYAN = '\033[36m'
+BLUE = '\033[94m'
+GREEN = '\033[92m'
+YELLOW = '\033[93m'
+RED = '\033[91m'
+BOLD = '\033[1m'
+UNDERLINE = '\033[4m'
+ITALIC = '\033[3m'
+FAINT =  '\033[2m'
+NORMAL = '\033[22m'
+					</xmp>
+					<textarea class='invisible' id='python_snippet2'>
+PURPLE = '\033[95m'
+CYAN = '\033[95m'
+DARKCYAN = '\033[36m'
+BLUE = '\033[94m'
+GREEN = '\033[92m'
+YELLOW = '\033[93m'
+RED = '\033[91m'
+BOLD = '\033[1m'
+UNDERLINE = '\033[4m'
+ITALIC = '\033[3m'
+FAINT =  '\033[2m'
+NORMAL = '\033[22m'
+					</textarea>
+				</div>
+			</div>
+
+
+		</div>
+
+<!-- END PYTHON START RUBY -->
+
+
+		<div class='main' id='ruby'>
+			<div class='snippet' onclick='copySnippet("snippet2")'>
+				<h1 class='snippet-title'>Hello World Function!</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+def hello()
+	puts "Hello World!"
+end
+					</xmp>
+					<textarea class='invisible' id='snippet2'>def hello()
+	puts "Hello World!"
+end</textarea>
+				</div>
+			</div>
+			<div class='snippet' onclick='copySnippet("ruby_snippet2")'>
+				<h1 class='snippet-title'>Slow Print</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+def slow_print(x)
+	x.split("").each do |letter|
+		STDOUT.print letter
+		sleep 0.02
+	end
+	puts ''
+end
+					</xmp>
+					<textarea class='invisible' id='ruby_snippet2'>
+def slow_print(x)
+	x.split("").each do |letter|
+		STDOUT.print letter
+		sleep 0.02
+	end
+	puts ''
+end
+					</textarea>
+				</div>
+			</div>
+		</div>
+
+<!-- END RUBY START JAVASCRIPT -->
+
+		<div class='main' id='js'>
+			<div class='snippet' onclick='copySnippet("snippet3")'>
+				<h1 class='snippet-title'>Hello World Function!</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+function hello(){
+	console.log("Hello World!");
+}
+					</xmp>
+					<textarea class='invisible' id='snippet3'>function hello(){
+	console.log("Hello World!");
+}</textarea>
+				</div>
+			</div>
+
+			<div class='snippet' onclick='copySnippet("javascript_snippet2")'>
+				<h1 class='snippet-title'>Random List Item</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+function randomItem(list) {
+  return items[Math.floor(Math.random()*list.length)];    
+}
+					</xmp>
+					<textarea class='invisible' id='javascript_snippet2'>
+function randomItem(list) {
+  return items[Math.floor(Math.random()*list.length)];    
+}
+					</textarea>
+				</div>
+			</div>
+
+			<div class='snippet' onclick='copySnippet("javascript_snippet3")'>
+				<h1 class='snippet-title'>Type Writer Effect</h1>
+				<div class='snippet-code-wrapper'>
+					<xmp class='snippet-code'>
+function write(text, time, number, id) {
+	var i = number;
+	var thingy = text.split("");
+	var area = document.getElementById(id);
+	if (i < text.length) {
+		area.innerHTML += thingy[i];
+		i ++;
+		var t = setTimeout(write, time, text, time, i, id);
+	} else {
+		return 0;
+	}
+}
+var waitTime = 60;
+var id = 'youHTMLtagID';
+var text = 'Typewriter effect with Javascript and HTML'
+
+write(text, waitTime, 0, id);
+					</xmp>
+					<textarea class='invisible' id='javascript_snippet3'>
+function write(text, time, number, id) {
+	var i = number;
+	var thingy = text.split("");
+	var area = document.getElementById(id);
+	if (i < text.length) {
+		area.innerHTML += thingy[i];
+		i ++;
+		var t = setTimeout(write, time, text, time, i, id);
+	} else {
+		return 0;
+	}
+}
+var waitTime = 60;
+var id = 'youHTMLtagID';
+var text = 'Typewriter effect with Javascript and HTML'
+
+write(text, waitTime, 0, id);
+					</textarea>
+				</div>
+			</div>
+
+		</div>
+
+<!-- END RUBY -->
+		<footer>
+			<a href='https://hpitgroup.glitch.me/'>© 2021, HARUN PEHLİVAN</a>
+		</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

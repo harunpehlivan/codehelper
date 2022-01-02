@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Titan+One&display=swap');
+
+
+html, body {
+	height: 100%;
+	background: linear-gradient(#292725,#1a1817) no-repeat;
+	color: white;
+	text-align: center;
+	overflow: auto;
+}
+.main {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.header {
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	color: rgb(0, 108, 250);
+	text-shadow: 2px 2px 5px black;
+	font-size: 5vw;
+}
+xmp {
+	font-family: monospace, courier;
+	padding: 10px;
+	text-align: justify;
+	background: linear-gradient(#2e2c2a50, #292725, #2e2c2a50);
+	border-radius: 10px;
+	white-space: pre-wrap;
+}
+
+
+.snippet {
+	border: 8px solid #02339c;
+	width: 70%;
+	height: auto;
+	padding: 30px;
+	margin: 50px auto;
+	border-radius: 30px;
+	box-shadow: 3px 3px 10px black;
+}
+.invisible {
+	width: .001px;
+	height: .001px;
+	background-color: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
+}
+
+.pop {
+	text-align: center;
+	position: fixed;
+	top: 5px;
+	width: 200px;
+	z-index: 1;
+	padding: 3px;
+	font-family: 'Bangers', cursive;
+	background: rgba(9, 82, 177, 0.507);
+	border-radius: 5px;
+	left: 50%;
+	margin-left: -100px;
+	display: none;
+	border: 3px solid white;
+	animation: fade 2s;
+}
+a {
+	font-family: 'Bangers', cursive;
+}
+@keyframes fade {
+	0% {opacity: 1}
+	100% {opacity: 0}
+}
